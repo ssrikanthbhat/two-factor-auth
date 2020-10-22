@@ -1,7 +1,9 @@
 package amazon;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class TwoSums {
     /**
@@ -19,21 +21,25 @@ public class TwoSums {
      */
     public static void main(String[] args) {
 
-        System.out.println(twoSum(new int[] {2, 7, 11, 15}, 22));
+        System.out.println(twoSum(new int[] {2, 7, 13, 3}, 10));
         
     }
 
     private static List twoSum(int[] nums, int target) {
-        List list = new ArrayList();
-        for(int i = 1; i< nums.length; i++) {
-             if(nums[i-1] + nums [i] == target) {
-                 list.add(i-1);
-                 list.add(i);
-                 return list;
-             }
+      final Map<Integer,Integer> map = new HashMap<>();
+      for (int i=0; i < nums.length; i++) {
+        int diff = target - nums[i];
+        if(map.get(diff) != null) {
+          ArrayList<Integer> indices = new ArrayList<>();
+          indices.add(map.get(diff));//{map.get(diff), nums[i]};
+          indices.add(nums[i]);//{map.get(diff), nums[i]};
+          return indices;//new ArrayList(indices.length);
+        }
 
-         }
+        map.put(nums[i],i);
 
-         return list;
+      }
+
+         return null;
     }
 }
