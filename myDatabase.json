@@ -1,0 +1,22 @@
+{
+    "user": {
+        "7185773b-7e73-47e9-b76d-c5f7c9832425": {
+            "id": "7185773b-7e73-47e9-b76d-c5f7c9832425",
+            "secret": {
+                "ascii": "@EJ#9z#?man7&bQRE9@wSaeiNI:00sEm",
+                "hex": "40454a23397a233f6d616e372662515245394077536165694e493a303073456d",
+                "base32": "IBCUUIZZPIRT63LBNY3SMYSRKJCTSQDXKNQWK2KOJE5DAMDTIVWQ",
+                "otpauth_url": "otpauth://totp/SecretKey?secret=IBCUUIZZPIRT63LBNY3SMYSRKJCTSQDXKNQWK2KOJE5DAMDTIVWQ"
+            }
+        },
+        "68bf53e2-49b6-49ad-889d-571bf20e07de": {
+            "id": "68bf53e2-49b6-49ad-889d-571bf20e07de",
+            "temp_secret": {
+                "ascii": "6db**8^/m10#HxZ$eoFF!nySavO]V[//",
+                "hex": "3664622a2a385e2f6d31302348785a24656f4646216e795361764f5d565b2f2f",
+                "base32": "GZSGEKRKHBPC63JRGARUQ6C2ERSW6RSGEFXHSU3BOZHV2VS3F4XQ",
+                "otpauth_url": "otpauth://totp/SecretKey?secret=GZSGEKRKHBPC63JRGARUQ6C2ERSW6RSGEFXHSU3BOZHV2VS3F4XQ"
+            }
+        }
+    }
+}
